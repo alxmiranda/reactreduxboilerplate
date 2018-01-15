@@ -9,8 +9,9 @@ module.exports = {
   output: {
     path: path.resolve(rootDir, 'build'),
     filename: 'bundle.js',
+    chunkFilename: '[name].bundle.js'
   },
-  resolve: {
+  resolve: {  
     modules: [
       path.resolve(rootDir, 'src/'),
       'node_modules'
@@ -67,7 +68,7 @@ module.exports = {
   plugins: [
     new HtmlWebpackPlugin({
       template: './src/index.html',
-      filename: './index.html',
+      filename: './index.html'
     }),
   ],
   devServer: {
