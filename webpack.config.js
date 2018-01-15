@@ -1,7 +1,8 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const path = require('path');
 
-const rootDir = path.resolve(__dirname, '..');
+const rootDir = path.resolve(__dirname, '.');
+const srcDir = path.resolve(__dirname, 'src/');
 
 module.exports = {
   entry: './src/index',
@@ -34,12 +35,12 @@ module.exports = {
       },
       {
         test: /\.scss$/,
-        include: path.resolve(rootDir, 'src/'),
         use: [
           'style-loader',
           'css-loader',
           'sass-loader',
         ],
+        include: srcDir,
       },
       {
         exclude : [
