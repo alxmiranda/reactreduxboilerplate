@@ -70,7 +70,10 @@ module.exports = {
       template: './src/index.html',
       filename: './index.html',
     }),
-    new StyleLintPlugin(),
+    new StyleLintPlugin({
+      emitErrors: false,
+      quiet: false,
+    }),
   ],
   devServer: {
     contentBase: path.resolve(rootDir, 'build'),
