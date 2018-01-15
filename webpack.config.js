@@ -4,9 +4,7 @@ const path = require('path');
 const rootDir = path.resolve(__dirname, '..');
 
 module.exports = {
-  entry: {
-    index: path.resolve(rootDir, 'src', 'index')
-  },
+  entry: './src/index',
   output: {
     path: path.resolve(rootDir, 'build'),
     filename: 'bundle.js',
@@ -32,6 +30,27 @@ module.exports = {
         enforce: 'pre',
         options: {
           emitWarning: true,
+        },
+      },
+      {
+        test: /\.scss$/,
+        include: /node_modules/,
+        use: [
+          'style-loader',
+          'css-loader',
+          'sass-loader',
+        ],
+      },
+      {
+        exclude : [
+          /\.html$/,
+          /\.jsx?$/,
+          /\.scss$/,
+        ],
+        loader: 'url-loader',
+        options: {
+          limit: 10000,
+          name: 'data/[name].[ext]',
         },
       },
     ],
