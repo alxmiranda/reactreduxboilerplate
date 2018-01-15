@@ -34,6 +34,13 @@ module.exports = {
         },
       },
       {
+        test: /\.css$/,
+        use: [
+          'style-loader',
+          'css-loader',
+        ],
+      },
+      {
         test: /\.scss$/,
         use: [
           'style-loader',
@@ -47,6 +54,7 @@ module.exports = {
           /\.html$/,
           /\.jsx?$/,
           /\.scss$/,
+          /\.css$/,
         ],
         loader: 'url-loader',
         options: {
