@@ -1,16 +1,18 @@
-const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const path = require('path');
+
+const rootDir = path.resolve(__dirname, '..');
 
 module.exports = {
   entry: './src/index.js',
   output: {
-    path: path.resolve(__dirname, 'build'),
+    path: path.resolve(rootDir, 'build'),
     filename: 'bundle.js',
   },
   resolve: {
     modules: [
-      path.resolve(__dirname, 'src/'),
-      'node_modules',
+      path.resolve(rootDir, 'src/'),
+      'node_modules'
     ],
     extensions: ['.js', '.jsx'],
   },
@@ -39,6 +41,6 @@ module.exports = {
     }),
   ],
   devServer: {
-    contentBase: path.resolve(__dirname, 'build'),
+    contentBase: path.resolve(rootDir, 'build'),
   },
 };
