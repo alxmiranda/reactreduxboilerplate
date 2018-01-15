@@ -6,7 +6,8 @@
   "scripts": {
     "start": "webpack-dev-server --colors --progress --inline --hot",
     "lint": "eslint --ext .jsx,.js src/",
-    "lint:fix": "eslint --ext .jsx,.js src/ --fix"
+    "lint:fix": "eslint --ext .jsx,.js src/ --fix",
+    "test": "jest"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",

@@ -18,7 +18,6 @@
     "jest"
   ],
   "rules": {
-    "import/no-extraneous-dependencies": "off",
     "import/no-named-as-default": 0
   }
 }
