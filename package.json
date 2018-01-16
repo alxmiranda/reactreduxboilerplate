@@ -38,6 +38,7 @@
     "jest": "^22.0.6",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",
+    "redux-logic-test": "^1.0.5",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "stylelint": "^8.4.0",
