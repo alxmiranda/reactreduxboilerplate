@@ -1,0 +1,92 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`InvestmentFundList Renders as the snapshot if it has investmentFunds 1`] = `
+<div>
+  <h1>
+    Fundos de investimento
+  </h1>
+  <table>
+    <thead>
+      <tr>
+        <th>
+          Code
+        </th>
+        <th>
+          Name
+        </th>
+        <th>
+          Manager
+        </th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>
+          6029
+        </td>
+        <td>
+          CAPITÂNIA EQUITIES INSTITUCIONAL FUNDO DE INVESTIMENTO EM COTAS DE FUNDOS DE INVESTIMENTO EM AÇÕES
+        </td>
+        <td>
+          Capitania Investimentos
+        </td>
+      </tr>
+      <tr>
+        <td>
+          6935
+        </td>
+        <td>
+          Modal Equity Value FIA
+        </td>
+        <td>
+          Modal Asset
+        </td>
+      </tr>
+      <tr>
+        <td>
+          770000
+        </td>
+        <td>
+          Brasil Plural Prev FIC FIM
+        </td>
+        <td>
+          Brasil Plural
+        </td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+`;
+
+exports[`InvestmentFundList Renders as the snapshot if it has investmentFunds and also is loading 1`] = `
+<div>
+  <h1>
+    Fundos de investimento
+  </h1>
+  <h2>
+    Carregando...
+  </h2>
+</div>
+`;
+
+exports[`InvestmentFundList Renders as the snapshot if it is loading 1`] = `
+<div>
+  <h1>
+    Fundos de investimento
+  </h1>
+  <h2>
+    Carregando...
+  </h2>
+</div>
+`;
+
+exports[`InvestmentFundList Renders as the snapshot if no prop is provided 1`] = `
+<div>
+  <h1>
+    Fundos de investimento
+  </h1>
+  <p>
+    Nenhum fundo encontrado.
+  </p>
+</div>
+`;

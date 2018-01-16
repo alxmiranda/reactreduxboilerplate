@@ -1,13 +1,12 @@
 import React from 'react';
 import { Provider } from 'react-redux';
 
-
-import Example from 'components/example/Example';
+import InvestmentFundListPage from './containers/InvestmentFundListPage';
 import store from './store';
 
 const App = () => (
   <Provider store={store}>
-    <Example />
+    <InvestmentFundListPage />
   </Provider>
 );
 

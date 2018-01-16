@@ -1,4 +1,5 @@
 const HtmlWebpackPlugin = require('html-webpack-plugin');
+const StyleLintPlugin = require('stylelint-webpack-plugin');
 const path = require('path');
 
 const rootDir = path.resolve(__dirname, '.');
@@ -69,6 +70,10 @@ module.exports = {
     new HtmlWebpackPlugin({
       template: './src/index.html',
       filename: './index.html'
+    }),
+    new StyleLintPlugin({
+      emitErrors: false,
+      quiet: false,
     }),
   ],
   devServer: {
