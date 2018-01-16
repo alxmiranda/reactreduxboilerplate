@@ -9,7 +9,7 @@
     "lint:fix": "eslint --ext .jsx,.js src/ --fix",
     "stylelint": "stylelint src/**/*.scss --color",
     "stylelint:fix": "stylelint src/**/*.scss --fix",
-    "test": "jest"
+    "test": "jest --coverage"
   },
   "devDependencies": {
     "babel-core": "^6.26.0",
@@ -22,6 +22,9 @@
     "babel-preset-react": "^6.24.1",
     "babel-preset-stage-0": "^6.24.1",
     "css-loader": "^0.28.8",
+    "enzyme": "^3.3.0",
+    "enzyme-adapter-react-16": "^1.1.1",
+    "enzyme-to-json": "^3.3.0",
     "eslint": "^4.15.0",
     "eslint-config-airbnb": "^16.1.0",
     "eslint-import-resolver-babel-module": "^4.0.0",
@@ -35,6 +38,7 @@
     "jest": "^22.0.6",
     "node-sass": "^4.7.2",
     "path": "^0.12.7",
+    "redux-logic-test": "^1.0.5",
     "sass-loader": "^6.0.6",
     "style-loader": "^0.19.1",
     "stylelint": "^8.4.0",
@@ -50,6 +54,7 @@
     "react-redux": "^5.0.6",
     "redux": "^3.7.2",
     "redux-devtools-extension": "^2.13.2",
-    "redux-thunk": "^2.2.0"
+    "redux-logic": "^0.12.3",
+    "whatwg-fetch": "^2.0.3"
   }
 }
